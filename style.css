@@ -51,6 +51,8 @@ header a {
     padding-bottom: 6rem;
 }
 
+
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* MEDIA */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -58,10 +60,18 @@ header a {
     #avatar {
         width: 50%;
     }
+
+    #menu-header {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 576px) {
     #avatar {
         width: 25%;
+    }
+
+    #menu-header-sm {
+        display: none;
     }
 }
