@@ -1,50 +1,67 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* GENERAL */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
 .bg-green {
     background-color: #1ABC9C;
 }
 
-.bg-black {
+.bg-light-black {
     background-color: #2C3E50;
 }
 
-.bg-light-black {
+.bg-dark-grey {
     background-color: #3A546D;
+}
+
+.bg-red {
+    background-color: #BA4B63;
+}
+
+.bg-verde-acqua {
+    background-color: #1EA4B6;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-azzurro {
+    background-color: #1C83C1;
+}
+
+.bg-beige {
+    background-color: #CCB2A3;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* HEADER */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-header {
-    background-color: #2C3E50;
-}
+
 
 header a {
     font-size: 0.8rem;
 }
 
-
-
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* SECTION CONTACT */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.MY_MARGIN_TOP {
-    margin-top: 7rem;
+
+#message {
+    padding-bottom: 6rem;
 }
 
-.btn-success {
-    background-color: #1ABC9C;
-    border: 0;
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* MEDIA */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 576px) {
+    #avatar {
+        width: 50%;
+    }
 }
 
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* FOOTER */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (min-width: 576px) {
+    #avatar {
+        width: 25%;
+    }
+}
