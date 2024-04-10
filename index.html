@@ -18,38 +18,50 @@
 
 <body>
 
-    <!-- ++++++++++++++++++++++++++++++ HEADER ++++++++++++++++++++++++++++++ -->
-    <header class="bg-light-black">
+    <!-- ++++++++++++++++++++++++++++++ NAV ++++++++++++++++++++++++++++++ -->
+    <nav class="bg-light-black fixed-top" id="menu-nav">
         <div class="container d-flex justify-content-between align-items-center">
             <h5 class="my-3 text-light">START BOOTSTRAP</h5>
+
             <div id="menu-header">
-                <a href="#" class="text-light text-decoration-none mx-1">PORTOFOLIO</a>
-                <a href="#" class="text-light text-decoration-none mx-1">ABOUT</a>
-                <a href="#" class="text-light text-decoration-none mx-1">CONTACT</a>
-            </div>
-            <div id="menu-header-sm">
-                <div class="container-fluid">
-                    <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas"
-                        aria-controls="hamburger-menu" data-bs-target="#hamburger-menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-                <div class="offcanvas" id="hamburger-menu" tabindex="-1">
-                    <div>
-                        <a href="#" class="text-dark text-decoration-none mx-1">PORTOFOLIO</a>
-                        <a href="#" class="text-dark text-decoration-none mx-1">ABOUT</a>
-                        <a href="#" class="text-dark text-decoration-none mx-1">CONTACT</a>
-                    </div>
-                </div>
+                <a href="#portofolio" class="text-light text-decoration-none mx-1">PORTOFOLIO</a>
+                <a href="#about" class="text-light text-decoration-none mx-1">ABOUT</a>
+                <a href="#contact" class="text-light text-decoration-none mx-1">CONTACT</a>
             </div>
         </div>
-    </header>
+    </nav>
+
+
+    <nav class="navbar bg-light-black fixed-top" id="menu-nav-sm">
+        <div class="container">
+            <h5 class="my-3 text-light">START BOOTSTRAP</h5>
+
+            <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars navbar-toggler-icon h-100 text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item">
+                        <a href="#portofolio" class=" nav-link  text-light text-decoration-none  p-2  ">PORTOFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class=" nav-link text-light text-decoration-none p-2 ">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class=" nav-link text-light text-decoration-none  p-2 ">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <!-- ++++++++++++++++++++++++++++++ MAIN ++++++++++++++++++++++++++++++ -->
     <main>
 
         <!-- ++++++++++++++++++++++++++++++ SECTION START ++++++++++++++++++++++++++++++ -->
-        <section class="bg-green">
+        <section class="bg-green pt-5 ">
             <div class="container d-flex flex-column align-items-center pt-5">
                 <img src="./img/avatar.svg" alt="avatar" id="avatar">
                 <h2 class="mt-3 text-light text-center">START BOOTSTRAP</h2>
@@ -65,12 +77,13 @@
         </section>
 
         <!-- ++++++++++++++++++++++++++++++ SECTION PORTOFOLIO ++++++++++++++++++++++++++++++ -->
-        <section>
+        <section id="portofolio">
             <div class="container d-flex flex-column align-items-center">
                 <h2 class="mt-5">PORTFOLIO</h2>
 
                 <div class="position-relative">
-                    <div class="border-dark position-absolute top-50 end-100 w-100 border-top border-3 text-dark"></div>
+                    <div class="border-dark position-absolute top-50 end-100 w-100 border-top border-3 text-dark">
+                    </div>
                     <i class="fa-solid fa-star mx-4"></i>
                     <div class="border-dark position-absolute top-50 start-100 w-100 border-top border-3"></div>
                 </div>
@@ -130,7 +143,7 @@
         </section>
 
         <!-- ++++++++++++++++++++++++++++++ SECTION ABOUT ++++++++++++++++++++++++++++++ -->
-        <section class="bg-green">
+        <section class="bg-green" id="about">
             <div class="container d-flex flex-column align-items-center">
                 <h2 class="text-light mt-5">ABOUT</h2>
                 <div class="position-relative">
@@ -142,17 +155,20 @@
                     <div class="col text-light mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
                         facere
                         tempore
-                        animi quia veritatis incidunt id unde minus voluptate mollitia. Officia dignissimos excepturi
+                        animi quia veritatis incidunt id unde minus voluptate mollitia. Officia dignissimos
+                        excepturi
                         incidunt quidem temporibus et aliquam aspernatur quae.
                         Nesciunt commodi numquam, velit iste asperiores hic perferendis neque sint facilis aliquid
                         inventore nam unde quibusdam suscipit voluptatibus temporibus perspiciatis rerum consequatur
                         ipsa earum laudantium, vero sunt! Ipsum, ipsam rerum?</div>
-                    <div class="col text-light mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                    <div class="col text-light mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deserunt
                         pariatur dolore
                         necessitatibus quis maiores sequi debitis, dicta distinctio commodi, velit sit nostrum
                         reprehenderit? Esse rem doloremque, eum beatae et totam.
                         Architecto consequuntur amet libero nihil est laborum! Corporis delectus laborum cupiditate
-                        architecto magnam! Dolorem voluptate ea error eaque vitae eius, deserunt possimus perspiciatis
+                        architecto magnam! Dolorem voluptate ea error eaque vitae eius, deserunt possimus
+                        perspiciatis
                         est odit fuga cumque saepe quia a.</div>
                 </div>
                 <button class="my-5 btn btn-outline-light"><i class="fa-solid fa-download"></i> Download</button>
@@ -160,11 +176,12 @@
         </section>
 
         <!-- ++++++++++++++++++++++++++++++ SECTION CONTACT ++++++++++++++++++++++++++++++ -->
-        <section>
+        <section id="contact">
             <div class="container d-flex flex-column align-items-center pb-5">
                 <h2 class="mt-5">CONTACT ME</h2>
                 <div class="position-relative">
-                    <div class="border-dark position-absolute top-50 end-100 w-100 border-top border-3 text-dark"></div>
+                    <div class="border-dark position-absolute top-50 end-100 w-100 border-top border-3 text-dark">
+                    </div>
                     <i class="fa-solid fa-star mx-4"></i>
                     <div class="border-dark position-absolute top-50 start-100 w-100 border-top border-3"></div>
                 </div>
